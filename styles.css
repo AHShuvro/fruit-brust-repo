@@ -1,0 +1,40 @@
+.slider-bg-img1 {
+    background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%),
+        url('./images/banner1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    border: none;
+}
+
+.slider-bg-img2 {
+    background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%),
+        url('./images/banner2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    border: none;
+}
+
+.slider-bg-img3 {
+    background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%),
+        url('./images/banner3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    border: none;
+}
+
+.slider-bg-img4 {
+    background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%),
+        url('./images/banner4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    border: none;
+}
+
+hr {
+    width: 244px;
+    height: 1px;
+}

@@ -45,7 +45,131 @@
 
 <body class="font-lato ">
 
-    
+    <header class=" md:container mx-5 md:mx-auto lg:mx-auto">
+        <!-- This is navbar section  -->
+        <nav>
+            <div
+                class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 navbar justify-between lg:h-[7.5rem] bg-[#F85559] mt-[3.12rem] rounded-[3.75rem]">
+                <div class="lg:pl-14">
+                    <ul class="flex gap-[1.87rem] text-[#FFF] text-lg font-normal">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Shop</li>
+                        <li>All Fruits</li>
+                    </ul>
+                </div>
+
+                <div class="navbar-center gap-4">
+                    <img src="./images/logo.png" alt="">
+                    <h2 class="text-[#FFF] text-[2.5rem] font-bold">Fruit Burst</h2>
+                </div>
+
+                <div>
+                    <form class="lg:w-[25rem] lg:h-14">
+                        <div class="relative">
+                            <div class="absolute inset-y-0 right-[1.87rem] flex items-center pl-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                </svg>
+                            </div>
+                            <input type="search" id="default-search"
+                                class="block w-full p-4 pl-[1.87rem] text-sm text-gray-900 border border-none rounded-[1.56rem] bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Search here" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Slider and cerousel -->
+        <div class="carousel w-full h-[14rem] md:h-[20rem] lg:h-[37.5rem] mt-14 bg-bike-pirmary-bg">
+            <!-- Slide 1 -->
+            <div id="slide1" class="carousel-item justify-center mt relative w-full  slider-bg-img1">
+                <div class="flex flex-col md:flex-col lg:flex-row gap-20 pt-5 md:pt-14 lg:pt-20">
+                    <div class="space-y-3 lg:space-y-7 text-center">
+                        <h1 class="font-bold text-4xl md:text-5xl lg:text-7xl text-[#FFF]">Exotic tastes at your
+                            <br>doorstep
+                        </h1>
+
+                        <p class="font-medium text-base lg:text-xl text-[#FFF]">We supply highly quality organic
+                            products</p>
+                        <button class="btn btn-error bg-primary-btn-color font-bold text-lg lg:text-xl text-[#FFF]">Shop
+                            Now</button>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle text-white bg-[#121212] border-none">❮</a>
+                    <a href="#slide2" class="btn btn-circle text-white bg-[#121212] border-none">❯</a>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div id="slide2" class="carousel-item justify-center mt relative w-full slider-bg-img2">
+                <div class="flex flex-col md:flex-col lg:flex-row gap-20 p-5 md:p-14 lg:pt-20">
+                    <div class="space-y-3 lg:space-y-7 text-center">
+                        <h1 class="font-bold text-4xl md:text-5xl lg:text-7xl text-[#FFF]">Exotic tastes at your
+                            <br>doorstep
+                        </h1>
+
+                        <p class="font-medium text-base lg:text-xl text-[#FFF]">We supply highly quality organic
+                            products</p>
+                        <button class="btn btn-error bg-primary-btn-color font-bold text-lg lg:text-xl text-[#FFF]">Shop
+                            Now</button>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle text-white bg-[#121212] border-none">❮</a>
+                    <a href="#slide3" class="btn btn-circle text-white bg-[#121212] border-none">❯</a>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div id="slide3" class="carousel-item justify-center mt relative w-full slider-bg-img3">
+                <div class="flex flex-col md:flex-col lg:flex-row gap-20 p-5 md:p-14 lg:pt-20">
+                    <div class="space-y-3 lg:space-y-7 text-center">
+                        <h1 class="font-bold text-4xl md:text-5xl lg:text-7xl text-[#FFF]">Exotic tastes at your
+                            <br>doorstep
+                        </h1>
+
+                        <p class="font-medium text-base lg:text-xl text-[#FFF]">We supply highly quality organic
+                            products</p>
+                        <button class="btn btn-error bg-primary-btn-color font-bold text-lg lg:text-xl text-[#FFF]">Shop
+                            Now</button>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle text-white bg-[#121212] border-none">❮</a>
+                    <a href="#slide4" class="btn btn-circle text-white bg-[#121212] border-none">❯</a>
+                </div>
+            </div>
+            <!-- Slide 4 -->
+            <div id="slide4" class="carousel-item justify-center mt relative w-full slider-bg-img4">
+                <div class="flex flex-col md:flex-col lg:flex-row gap-20 p-5 md:p-14 lg:pt-20">
+                    <div class="space-y-3 lg:space-y-7 text-center">
+                        <h1 class="font-bold text-4xl md:text-5xl lg:text-7xl text-[#FFF]">Exotic tastes at your
+                            <br>doorstep
+                        </h1>
+
+                        <p class="font-medium text-base lg:text-xl text-[#FFF]">We supply highly quality organic
+                            products</p>
+                        <button class="btn btn-error bg-primary-btn-color font-bold text-lg lg:text-xl text-[#FFF]">Shop
+                            Now</button>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle text-white bg-[#121212] border-none">❮</a>
+                    <a href="#slide1" class="btn btn-circle text-white bg-[#121212] border-none">❯</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class=" md:container mx-5 md:mx-auto lg:mx-auto">
+        
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
