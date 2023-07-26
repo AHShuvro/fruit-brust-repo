@@ -38,3 +38,12 @@ hr {
     width: 244px;
     height: 1px;
 }
+
+.meet-bg-img {
+    background: linear-gradient(180deg, rgba(18, 18, 18, 0.70) 50%, rgba(18, 18, 18, 0.70) 50%),
+        url('./images/banner1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    border: none;
+}
