@@ -50,8 +50,7 @@
         <!-- This is navbar section  -->
         <nav>
             <div class="navbar bg-base-100 lg:h-[7.5rem] bg-[#F85559] mt-[3.12rem] rounded-[3.75rem]">
-                <!-- ssssss -->
-                <div class="relative grid grid-cols-3 justify-center w-full">
+                <div class="relative grid grid-cols-3 justify-evenly w-full">
                     <div class="navbar-center hidden lg:flex">
                         <ul class="menu gap-[1.87rem] text-[#FFF] text-lg font-normal menu-horizontal px-1">
                             <li><a>Home</a></li>
@@ -61,7 +60,7 @@
                         </ul>
                     </div>
 
-                    <div class="flex justify-center items-center gap-4">
+                    <div class="flex flex-1 justify-center items-center gap-4">
                         <img class="w-[27px] lg:w-auto h-[30px] lg:h-auto" src="./images/logo.png" alt="">
                         <h2 class="text-[#FFF] w-auto text-xl lg:text-[2.5rem] font-bold">Fruit Burst</h2>
                     </div>
@@ -193,7 +192,7 @@
                 </div>
             </div>
             <div class="container absolute z-10 md:mx-auto -mt-24">
-                <div class="flex justify-center hidden lg:flex">
+                <div class="justify-center hidden lg:flex">
                     <div class="justify-around items-center lg:w-[74.75rem] h-[15.62rem] rounded-lg bg-[#FFF] lg:flex ">
                         <div class="flex flex-col justify-center items-center">
                             <img src="./images/fruit1.png" alt="">
@@ -286,7 +285,39 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                         </div>
-                        <a class="text-[#F85559] text-lg font-bold " href="">Details</a>
+                        <div>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="text-[#F85559] text-lg font-bold"
+                                onclick="my_modal_1.showModal()">Details</button>
+                            <dialog id="my_modal_1" class="modal">
+                                <form method="dialog" class="modal-box flex flex-col items-center space-y-6">
+                                    <img class="w-[150px] h-[150px]" src="./images/fruit6.png" alt="">
+                                    <h2 class="text-[2.5rem] text-[#121212] font-extrabold">Apple</h2>
+                                    <p class="text-base text-gray-500 font-medium ">Professional employees are there for
+                                        you to pick the most
+                                        <br>amazing and fresh fruits.
+                                    </p>
+                                    <div class="rating flex justify-center">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                    </div>
+                                    <div class="flex gap-8 justify-center">
+                                        <button
+                                            class="btn btn-error bg-white font-bold text-lg lg:text-xl capitalize text-[#F85559]">Close</button>
+                                        <button
+                                            class="btn btn-error bg- font-bold text-lg lg:text-xl capitalize text-[#FFF]">Buy
+                                            Now</button>
+                                    </div>
+                                </form>
+                                <form method="dialog" class="modal-backdrop popup-bg">
+                                    <button>close</button>
+                                </form>
+                            </dialog>
+                        </div>
                     </div>
                 </div>
                 <!-- Card 2 -->
@@ -303,7 +334,39 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                         </div>
-                        <a class="text-[#F85559] text-lg font-bold " href="">Details</a>
+                        <div>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="text-[#F85559] text-lg font-bold"
+                                onclick="my_modal_2.showModal()">Details</button>
+                            <dialog id="my_modal_2" class="modal">
+                                <form method="dialog" class="modal-box flex flex-col items-center space-y-6">
+                                    <img class="w-[150px] h-[150px]" src="./images/fruit7.png" alt="">
+                                    <h2 class="text-[2.5rem] text-[#121212] font-extrabold">Orange</h2>
+                                    <p class="text-base text-gray-500 font-medium ">Professional employees are there for
+                                        you to pick the most
+                                        <br>amazing and fresh fruits.
+                                    </p>
+                                    <div class="rating flex justify-center">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                    </div>
+                                    <div class="flex gap-8 justify-center">
+                                        <button
+                                            class="btn btn-error bg-white font-bold text-lg lg:text-xl capitalize text-[#F85559]">Close</button>
+                                        <button
+                                            class="btn btn-error bg- font-bold text-lg lg:text-xl capitalize text-[#FFF]">Buy
+                                            Now</button>
+                                    </div>
+                                </form>
+                                <form method="dialog" class="modal-backdrop popup-bg">
+                                    <button>close</button>
+                                </form>
+                            </dialog>
+                        </div>
                     </div>
                 </div>
                 <!-- Card 3 -->
@@ -320,7 +383,39 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                         </div>
-                        <a class="text-[#F85559] text-lg font-bold " href="">Details</a>
+                        <div>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="text-[#F85559] text-lg font-bold"
+                                onclick="my_modal_3.showModal()">Details</button>
+                            <dialog id="my_modal_3" class="modal">
+                                <form method="dialog" class="modal-box flex flex-col items-center space-y-6">
+                                    <img class="w-[150px] h-[150px]" src="./images/fruit8.png" alt="">
+                                    <h2 class="text-[2.5rem] text-[#121212] font-extrabold">Red Dragon</h2>
+                                    <p class="text-base text-gray-500 font-medium ">Professional employees are there for
+                                        you to pick the most
+                                        <br>amazing and fresh fruits.
+                                    </p>
+                                    <div class="rating flex justify-center">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                    </div>
+                                    <div class="flex gap-8 justify-center">
+                                        <button
+                                            class="btn btn-error bg-white font-bold text-lg lg:text-xl capitalize text-[#F85559]">Close</button>
+                                        <button
+                                            class="btn btn-error bg- font-bold text-lg lg:text-xl capitalize text-[#FFF]">Buy
+                                            Now</button>
+                                    </div>
+                                </form>
+                                <form method="dialog" class="modal-backdrop popup-bg">
+                                    <button>close</button>
+                                </form>
+                            </dialog>
+                        </div>
                     </div>
                 </div>
                 <!-- Card 4 -->
@@ -337,7 +432,39 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                         </div>
-                        <a class="text-[#F85559] text-lg font-bold " href="">Details</a>
+                        <div>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="text-[#F85559] text-lg font-bold"
+                                onclick="my_modal_4.showModal()">Details</button>
+                            <dialog id="my_modal_4" class="modal">
+                                <form method="dialog" class="modal-box flex flex-col items-center space-y-6">
+                                    <img class="w-[150px] h-[150px]" src="./images/fruit9.png" alt="">
+                                    <h2 class="text-[2.5rem] text-[#121212] font-extrabold">Banana</h2>
+                                    <p class="text-base text-gray-500 font-medium ">Professional employees are there for
+                                        you to pick the most
+                                        <br>amazing and fresh fruits.
+                                    </p>
+                                    <div class="rating flex justify-center">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                                    </div>
+                                    <div class="flex gap-8 justify-center">
+                                        <button
+                                            class="btn btn-error bg-white font-bold text-lg lg:text-xl capitalize text-[#F85559]">Close</button>
+                                        <button
+                                            class="btn btn-error bg- font-bold text-lg lg:text-xl capitalize text-[#FFF]">Buy
+                                            Now</button>
+                                    </div>
+                                </form>
+                                <form method="dialog" class="modal-backdrop popup-bg">
+                                    <button>close</button>
+                                </form>
+                            </dialog>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -455,7 +582,7 @@
                             <i class="fa-regular fa-heart"></i>
                         </div>
                         <div class="space-y-4">
-                            <h4 class="text-2xl text-[#121212] font-extrabold">Dedicated Team</h4>
+                            <h4 class="text-2xl text-[#121212] font-extrabold">Fresh is Best</h4>
                             <hr>
                             <p class="text-gray-500 opacity-4 text-sm lg:text-base font-medium">
                                 Professional employees are there for you to pick
@@ -469,7 +596,7 @@
                             <i class="fa-solid fa-gift"></i>
                         </div>
                         <div class="space-y-4">
-                            <h4 class="text-2xl text-[#121212] font-extrabold">Dedicated Team</h4>
+                            <h4 class="text-2xl text-[#121212] font-extrabold">Gift Certificates</h4>
                             <hr>
                             <p class="text-gray-500 opacity-4 text-sm lg:text-base font-medium">
                                 Professional employees are there for you to pick
@@ -482,7 +609,7 @@
                     <div
                         class="flex gap-6 flex-col-reverse md:flex-col-reverse lg:flex-row items-center lg:items-start text-center lg:text-end">
                         <div class="space-y-4">
-                            <h4 class="text-2xl text-[#121212] font-extrabold">Dedicated Team</h4>
+                            <h4 class="text-2xl text-[#121212] font-extrabold">Integrated Supplier</h4>
                             <hr>
                             <p class="text-gray-500 opacity-4 text-sm lg:text-base font-medium">
                                 Professional employees are there for you to pick
@@ -491,13 +618,13 @@
                         </div>
                         <div
                             class=" flex items-center justify-center h-[3.75rem] w-[3.75rem] bg-gray-300 rounded-[2rem] opacity-4">
-                            <i class="fa-solid fa-people-group"></i>
+                            <i class="fa-solid fa-parachute-box"></i>
                         </div>
                     </div>
                     <div
                         class="flex gap-6 flex-col-reverse md:flex-col-reverse lg:flex-row items-center lg:items-start text-center lg:text-end">
                         <div class="space-y-4">
-                            <h4 class="text-2xl text-[#121212] font-extrabold">Dedicated Team</h4>
+                            <h4 class="text-2xl text-[#121212] font-extrabold">Sustainable Practice</h4>
                             <hr>
                             <p class="text-gray-500 opacity-4 text-sm lg:text-base font-medium">
                                 Professional employees are there for you to pick
@@ -506,13 +633,13 @@
                         </div>
                         <div
                             class=" flex items-center justify-center h-[3.75rem] w-[3.75rem] bg-gray-300 rounded-[2rem] opacity-4">
-                            <i class="fa-solid fa-people-group"></i>
+                            <i class="fa-solid fa-fire-flame-simple"></i>
                         </div>
                     </div>
                     <div
                         class="flex gap-6 flex-col-reverse md:flex-col-reverse lg:flex-row items-center lg:items-start text-center lg:text-end">
                         <div class="space-y-4">
-                            <h4 class="text-2xl text-[#121212] font-extrabold">Dedicated Team</h4>
+                            <h4 class="text-2xl text-[#121212] font-extrabold">The Benefits Only</h4>
                             <hr>
                             <p class="text-gray-500 opacity-4 text-sm lg:text-base font-medium">
                                 Professional employees are there for you to pick
@@ -521,7 +648,7 @@
                         </div>
                         <div
                             class=" flex items-center justify-center h-[3.75rem] w-[3.75rem] bg-gray-300 rounded-[2rem] opacity-4">
-                            <i class="fa-solid fa-people-group"></i>
+                            <i class="fa-solid fa-money-bill-trend-up"></i>
                         </div>
                     </div>
 
